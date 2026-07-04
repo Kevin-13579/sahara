@@ -1,0 +1,89 @@
+/* src/components/DoorPage.css */
+.door-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.doors-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.door-wrapper {
+  perspective: 1000px;
+  width: 120px;
+  height: 200px;
+}
+
+.door {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.door.open {
+  transform: rotateY(-140deg);
+}
+
+.door-front, .door-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.door-front {
+  background: linear-gradient(#ff5e62, #ff9966);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 3px solid #fff;
+}
+
+.door-back {
+  background: white;
+  color: #ff4a75;
+  transform: rotateY(180deg);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.proceed-btn {
+  background: white;
+  color: #ff4a75;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}

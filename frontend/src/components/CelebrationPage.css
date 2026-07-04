@@ -1,0 +1,43 @@
+/* src/components/CelebrationPage.css */
+.celebration-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.emoji-pop {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  animation: bounceIcon 1s infinite alternate;
+}
+
+.celebration-card h1 {
+  color: #ff4a75;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.celebration-card h2 {
+  color: #ff758c;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.celebration-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounceIcon {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}

@@ -1,0 +1,42 @@
+/* src/components/SplashScreen.css */
+.splash-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-out;
+}
+
+.splash-card h1 {
+  color: #ff4a75;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.splash-card p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.enter-btn {
+  background: linear-gradient(45deg, #ff4a75, #ff758c);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.enter-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 74, 117, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

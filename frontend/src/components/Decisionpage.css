@@ -1,0 +1,57 @@
+/* src/components/DecisionPage.css */
+.decision-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.decision-card h2 {
+  color: #ff4a75;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.decision-card p {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  min-height: 50px;
+}
+
+.yes-btn {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(56, 239, 125, 0.4);
+  transition: transform 0.2s;
+}
+
+.yes-btn:hover {
+  transform: scale(1.1);
+}
+
+.no-btn {
+  background: #95a5a6;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
